@@ -1,9 +1,10 @@
+// Copyright 2026 UNN-CS
 #define _USE_MATH_DEFINES
 
-#include "circle.h"
-#include "tasks.h"
 #include <stdexcept>
 #include <cmath>
+#include "circle.h"
+#include "tasks.h"
 
 double EarthRope(double additioanl_length) {
     if (additioanl_length <= 0) {
@@ -20,9 +21,9 @@ double EarthRope(double additioanl_length) {
     return rope_plus.getRadius() - EARTH_RADIUS_M;
 }
 
-double Pool(double pool_radius, 
-           double road_width, 
-           double concrete_price, 
+double Pool(double pool_radius,
+           double road_width,
+           double concrete_price,
            double fence_price) {
     if (pool_radius <= 0.0) {
         throw std::invalid_argument("pool radius must be positive number");
@@ -33,6 +34,7 @@ double Pool(double pool_radius,
 
     double road_area = outer.getArea() - pool.getArea();
     double fence_length = outer.getFerence();
-    double total_cost = (road_area  * concrete_price) + (fence_length * fence_price);
+    double total_cost = (road_area  * concrete_price) + 
+                        (fence_length * fence_price);
     return total_cost;
 }

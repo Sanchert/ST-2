@@ -1,5 +1,6 @@
-#ifndef CIRCLE_TASK_H
-#define CIRCLE_TASK_H
+// Copyright 2026 UNN-CS
+#ifndef CIRCLE_TASK_H_
+#define CIRCLE_TASK_H_
 
 #define EARTH_RADIUS_KM 6378.1
 #define EARTH_RADIUS_M (EARTH_RADIUS_KM * 1000.0)
@@ -19,9 +20,9 @@ double EarthRope(double additioanl_length = 1.0);
  * @param fence_price Стоимость ограды за погонный метр (по умолчанию 2000)
  * @return Общая стоимость материалов
  */
-double Pool(double pool_radius = 3.0, 
-           double road_width = 1.0, 
-           double concrete_price = 1000.0, 
+double Pool(double pool_radius = 3.0,
+           double road_width = 1.0,
+           double concrete_price = 1000.0,
            double fence_price = 2000.0);
 
-#endif // CIRCLE_TASK_H
+#endif // CIRCLE_TASK_H_

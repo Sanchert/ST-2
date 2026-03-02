@@ -48,7 +48,8 @@ TEST(CircleTest, SetFerence) {
     double expected_radius = new_ference / (2.0 * M_PI);
     EXPECT_NEAR(circle.getRadius(), expected_radius, EPSILON);
     EXPECT_NEAR(circle.getFerence(), new_ference, EPSILON);
-    EXPECT_NEAR(circle.getArea(), M_PI * expected_radius * expected_radius, EPSILON);
+    EXPECT_NEAR(circle.getArea(), M_PI * expected_radius * expected_radius, 
+                EPSILON);
 }
 
 TEST(CircleTest, SetFerenceZero) {
@@ -86,10 +87,10 @@ TEST(CircleTest, MultipleSetOperations) {
 
     circle.setRadius(2.0);
     EXPECT_NEAR(circle.getRadius(), 2.0, EPSILON);
-    
+
     circle.setFerence(10.0);
     EXPECT_NEAR(circle.getFerence(), 10.0, EPSILON);
-    
+
     circle.setArea(50.0);
     EXPECT_NEAR(circle.getArea(), 50.0, EPSILON);
 }
@@ -136,7 +137,7 @@ TEST(PoolTest, CustomPrices) {
     double concrete = 1500.0;
     double fence = 2500.0;
     double cost = Pool(3.0, 1.0, concrete, fence);
-    
+
     double expected_cost = (M_PI * 7.0 * concrete) + (M_PI * 8.0 * fence);
     EXPECT_NEAR(cost, expected_cost, 1.0);
 }
