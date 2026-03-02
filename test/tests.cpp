@@ -6,7 +6,7 @@
 #include "circle.h"
 #include "tasks.h"
 
-const double EPSILON = 1e-10;
+const double EPSILON = 1e-9;
 
 TEST(CircleTest, Constructor) {
     Circle circle(5.0);

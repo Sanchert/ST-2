@@ -7,7 +7,7 @@
 #include "tasks.h"
 
 double EarthRope(double additioanl_length) {
-    if (additioanl_length <= 0) {
+    if (additioanl_length < 0) {
         throw std::invalid_argument("Additional length must be positive");
     }
 
