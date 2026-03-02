@@ -34,7 +34,7 @@ double Pool(double pool_radius,
 
     double road_area = outer.getArea() - pool.getArea();
     double fence_length = outer.getFerence();
-    double total_cost = (road_area  * concrete_price) + 
+    double total_cost = (road_area  * concrete_price) +
                         (fence_length * fence_price);
     return total_cost;
 }

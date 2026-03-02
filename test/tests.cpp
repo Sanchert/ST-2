@@ -48,7 +48,7 @@ TEST(CircleTest, SetFerence) {
     double expected_radius = new_ference / (2.0 * M_PI);
     EXPECT_NEAR(circle.getRadius(), expected_radius, EPSILON);
     EXPECT_NEAR(circle.getFerence(), new_ference, EPSILON);
-    EXPECT_NEAR(circle.getArea(), M_PI * expected_radius * expected_radius, 
+    EXPECT_NEAR(circle.getArea(), M_PI * expected_radius * expected_radius,
                 EPSILON);
 }
 
