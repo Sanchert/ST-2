@@ -1,6 +1,6 @@
 // Copyright 2026 UNN-CS
-#ifndef INCLUDE_CIRCLE_TASK_H_
-#define INCLUDE_CIRCLE_TASK_H_
+#ifndef INCLUDE_TASKS_H_
+#define INCLUDE_TASKS_H_
 
 #define EARTH_RADIUS_KM 6378.1
 #define EARTH_RADIUS_M (EARTH_RADIUS_KM * 1000.0)
@@ -25,4 +25,4 @@ double Pool(double pool_radius = 3.0,
            double concrete_price = 1000.0,
            double fence_price = 2000.0);
 
-#endif  // INCLUDE_CIRCLE_TASKS_H_
+#endif  // INCLUDE_TASKS_H_
